@@ -1,0 +1,79 @@
+\documentclass[sigconf,nonacm]{acmart}
+
+\title{Revisiting VulRepair: A Reproduction and Evaluation of T5-based Software Vulnerability Repair Models}
+
+\author{Yushika}
+\affiliation{% 
+  \institution{University of Ottawa}
+  \city{Ottawa}
+  \country{Canada}
+}
+\email{pjhun035@uottawa.ca}
+
+\author{Rina Osman}
+\affiliation{% 
+  \institution{University of Ottawa}
+  \city{Ottawa}
+  \country{Canada}
+}
+\email{rosma012@uottawa.ca}
+
+\author{Olena Naim}
+\affiliation{% 
+  \institution{University of Ottawa}
+  \city{Ottawa}
+  \country{Canada}
+}
+\email{onaim017@uottawa.ca}
+
+\author{Professor Paria Shirani}
+\affiliation{% 
+  \institution{University of Ottawa}
+  \city{Ottawa}
+  \country{Canada}
+}
+\email{pshirani@uottawa.ca}
+
+\renewcommand{\shortauthors}{Jhundoo et al.}
+
+\begin{document}
+
+\begin{abstract}
+We revisit and replicate the VulRepair study, a T5-based neural machine translation model designed to automatically repair software vulnerabilities. We re-implement all ten model variants and conduct a comprehensive evaluation to investigate four key research questions (RQs): model accuracy (RQ1), impact of pre-training (RQ2), benefits of BPE tokenization (RQ3), and the contribution of each VulRepair component (RQ4). Through model replication and dataset deduplication, we assess how each design choice contributes to model performance. Our findings confirm the original study's conclusions and further reveal how duplications in the dataset can influence reported accuracy. This study contributes reproducibility insights and extends the VulRepair evaluation to all 10 variants using deduplicated data.
+\end{abstract}
+
+\keywords{Vulnerability Repair, T5, Transformer, Dataset Deduplication, Neural Machine Translation, Software Engineering, Reproducibility}
+
+\maketitle
+
+\section{Introduction}
+\input{sections/1_introduction}
+
+\section{Background and Motivation}
+\input{sections/2_background}
+
+\section{VulRepair Architecture}
+\input{sections/3_vulrepair}
+
+\section{Methodology}
+\input{sections/4_methodology}
+
+\section{Results}
+\input{sections/5_results}
+
+\section{Discussion}
+\input{sections/6_discussion}
+
+\section{Related Work}
+\input{sections/7_related}
+
+\section{Threats to Validity}
+\input{sections/8_threats}
+
+\section{Conclusion}
+\input{sections/9_conclusion}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+\end{document}
